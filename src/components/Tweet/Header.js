@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useTweet } from "../TweetContext";
 
-const Header = ({ displayName, username, avatarSrc }) => {
+const Header = () => {
+  const { displayName, username, avatarSrc } = useTweet();
   return (
     <Wrapper>
       <Avatar src={avatarSrc} />

@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
+import { useTweet } from "../TweetContext";
 import Heart from "./Heart";
+import PoppingCircle from "./PoppingCircle";
 
 const PARTICLE_COLORS = ["#e53935", "#1e88e5", "#43a047", "#fdd835", "#fb8c00"];
 
-const LikeButton = ({ isLiked, size = 40 }) => {
+const LikeButton = ({ size = 40 }) => {
+  const { isLiked } = useTweet();
   const heartSize = size * 0.6;
 
   return (
