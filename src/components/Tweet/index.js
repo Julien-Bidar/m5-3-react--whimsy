@@ -7,12 +7,7 @@ import Stat from "./Stat";
 import { useTweet } from "../TweetContext";
 
 const Tweet = () => {
-  const {
-    tweetContents,
-    dateToDisplay,
-    numOfLikes,
-    numOfRetweets,
-  } = useTweet();
+  const { tweetContents, dateToDisplay } = useTweet();
 
   return (
     <Wrapper>

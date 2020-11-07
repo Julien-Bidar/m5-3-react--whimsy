@@ -28,6 +28,8 @@ const StatNum = styled.span`
 `;
 
 const Stats = styled.div`
+  border-top: 1px solid;
+  border-color: #e6e8eb;
   color: rgb(101, 119, 134);
   font-size: 16px;
   display: flex;
